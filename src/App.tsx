@@ -7,6 +7,7 @@ import InterventionZone from './components/InterventionZone'
 import Testimonials from './components/Testimonials'
 import CTAFinal from './components/CTAFinal'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
 import MentionsLegales from './pages/MentionsLegales'
 import Confidentialite from './pages/Confidentialite'
 
@@ -19,6 +20,12 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'instant' })
   }, [page])
 
+  useEffect(() => {
+    const handler = () => setPage('confidentialite')
+    window.addEventListener('navigate-confidentialite', handler)
+    return () => window.removeEventListener('navigate-confidentialite', handler)
+  }, [])
+
   if (page === 'mentions') {
     return <MentionsLegales onBack={() => setPage('home')} />
   }
@@ -27,18 +34,21 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen bg-noir">
-      <Hero />
-      <ReassuranceBar />
-      <Services />
-      <WhyUs />
-      <InterventionZone />
-      <Testimonials />
-      <CTAFinal />
-      <Footer
-        onMentions={() => setPage('mentions')}
-        onConfidentialite={() => setPage('confidentialite')}
-      />
-    </main>
+    <>
+      <main className="min-h-screen bg-noir">
+        <Hero />
+        <ReassuranceBar />
+        <Services />
+        <WhyUs />
+        <InterventionZone />
+        <Testimonials />
+        <CTAFinal />
+        <Footer
+          onMentions={() => setPage('mentions')}
+          onConfidentialite={() => setPage('confidentialite')}
+        />
+      </main>
+      <CookieBanner />
+    </>
   )
 }
