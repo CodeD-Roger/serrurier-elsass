@@ -106,12 +106,12 @@ export default function WhyUs() {
         </p>
       </motion.header>
 
-      {/* 3 articles */}
+      {/* 3 articles — cartes */}
       <motion.div
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '0 48px',
+          gap: 24,
           marginBottom: 72,
         }}
         initial={{ opacity: 0 }}
@@ -123,8 +123,13 @@ export default function WhyUs() {
           <motion.article
             key={n}
             style={{
-              paddingTop: 36,
-              borderTop: `1px solid #e2e6ee`,
+              background: '#fff',
+              border: '1px solid #e2e6ee',
+              borderRadius: 16,
+              padding: '32px 28px 36px',
+              boxShadow: '0 1px 4px rgba(11,31,77,0.05)',
+              display: 'flex',
+              flexDirection: 'column',
             }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
