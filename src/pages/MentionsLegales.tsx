@@ -98,13 +98,11 @@ export default function MentionsLegales({ onBack }: Props) {
         <Section title="1. Éditeur du site">
           <p><strong style={{ color: INK }}>Raison sociale :</strong> JOUN SERVICES</p>
           <p><strong style={{ color: INK }}>Forme juridique :</strong> Société par actions simplifiée à associé unique (SASU)</p>
-          <p><strong style={{ color: INK }}>Capital social :</strong> 1,00 EUR</p>
           <p><strong style={{ color: INK }}>Siège social :</strong> 60 rue François 1er, 75008 Paris</p>
-          <p><strong style={{ color: INK }}>SIREN :</strong> 999 215 627</p>
           <p><strong style={{ color: INK }}>RCS :</strong> 999 215 627 R.C.S. Paris</p>
-          <p><strong style={{ color: INK }}>EUID :</strong> FR7501.999215627</p>
-          <p><strong style={{ color: INK }}>Date d'immatriculation :</strong> 31 décembre 2025</p>
-          <p><strong style={{ color: INK }}>Domiciliataire :</strong> LegalPlace — 814 428 785 R.C.S.</p>
+          <p><strong style={{ color: INK }}>Email :</strong>{' '}
+            <a href="mailto:elsass.serrure@gmail.com" style={{ color: BLEU }}>elsass.serrure@gmail.com</a>
+          </p>
         </Section>
 
         <Section title="2. Directeur de la publication">
@@ -122,8 +120,8 @@ export default function MentionsLegales({ onBack }: Props) {
 
         <Section title="3. Hébergement">
           <p>
-            Ce site est hébergé par <strong style={{ color: INK }}>GitHub Pages</strong> (service de GitHub, Inc.),
-            88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+            Ce site est hébergé par <strong style={{ color: INK }}>Hostinger</strong> (UAB Hostinger International),
+            61 Lordou Vironos Street, 6023 Larnaca, Chypre.
           </p>
         </Section>
 
