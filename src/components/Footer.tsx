@@ -92,14 +92,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:contact@serrurier-wagner.fr"
+                  href="mailto:elsass.serrure@gmail.com"
                   className="flex items-center gap-3 text-gray-400 hover:text-bleu-light transition-colors duration-200 group"
                   aria-label="Envoyer un email"
                 >
                   <div className="w-8 h-8 rounded-lg bg-bleu/10 border border-bleu/20 flex items-center justify-center group-hover:border-bleu/40 transition-colors duration-200 flex-shrink-0">
                     <Mail size={14} className="text-bleu-light" />
                   </div>
-                  <span className="text-sm">contact@serrurier-wagner.fr</span>
+                  <span className="text-sm">elsass.serrure@gmail.com</span>
                 </a>
               </li>
               <li>
