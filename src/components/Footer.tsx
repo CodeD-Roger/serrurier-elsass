@@ -12,7 +12,12 @@ const navLinks = [
   { label: 'Contact',            href: '#contact' },
 ]
 
-export default function Footer() {
+interface Props {
+  onMentions: () => void
+  onConfidentialite: () => void
+}
+
+export default function Footer({ onMentions, onConfidentialite }: Props) {
   const year = new Date().getFullYear()
 
   return (
@@ -132,9 +137,9 @@ export default function Footer() {
             <p>SIRET : {SIRET}</p>
           </div>
           <div className="flex items-center gap-3">
-            <a href="#" className="hover:text-gray-300 transition-colors duration-200">Mentions légales</a>
+            <button onClick={onMentions} className="hover:text-gray-300 transition-colors duration-200 bg-transparent border-none cursor-pointer text-gray-500 text-xs">Mentions légales</button>
             <span>·</span>
-            <a href="#" className="hover:text-gray-300 transition-colors duration-200">Confidentialité</a>
+            <button onClick={onConfidentialite} className="hover:text-gray-300 transition-colors duration-200 bg-transparent border-none cursor-pointer text-gray-500 text-xs">Confidentialité</button>
           </div>
         </div>
 
