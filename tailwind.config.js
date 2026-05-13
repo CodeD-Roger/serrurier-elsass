@@ -9,11 +9,14 @@ export default {
       colors: {
         noir: '#0A0A0A',
         anthracite: '#1C1C1E',
-        gold: '#D4AF37',
-        'gold-light': '#E8C84A',
-        'gold-dark': '#B8952A',
         creme: '#F5F5F0',
         acier: '#8A8A8A',
+        rouge: '#DC2626',
+        'rouge-light': '#EF4444',
+        'rouge-dark': '#B91C1C',
+        bleu: '#1E40AF',
+        'bleu-light': '#3B82F6',
+        'bleu-dark': '#1E3A8A',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

@@ -8,7 +8,7 @@ export default function CTAFinal() {
     <section
       id="contact"
       className="relative py-28 px-6 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #B8952A 0%, #D4AF37 45%, #E2C040 75%, #C5991F 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #991B1B 0%, #DC2626 45%, #EF4444 75%, #B91C1C 100%)' }}
     >
       {/* Motifs décoratifs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -28,27 +28,27 @@ export default function CTAFinal() {
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="text-noir/50 text-xs font-semibold tracking-[0.2em] uppercase mb-5">Urgence serrurerie</p>
+          <p className="text-white/60 text-xs font-semibold tracking-[0.2em] uppercase mb-5">Urgence serrurerie</p>
 
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-black text-noir leading-tight mb-4 tracking-tight">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tight">
             Besoin d'un serrurier
             <br />maintenant ?
           </h2>
 
-          <p className="text-noir/60 text-lg mb-10 font-medium">
+          <p className="text-white/70 text-lg mb-10 font-medium">
             Disponible 24h/24, 7j/7 · Réponse immédiate
           </p>
 
           {/* Bouton pulsant */}
           <motion.div
             className="inline-block"
-            animate={{ boxShadow: ['0 0 0 0 rgba(10,10,10,0.25)', '0 0 0 18px rgba(10,10,10,0)'] }}
+            animate={{ boxShadow: ['0 0 0 0 rgba(255,255,255,0.3)', '0 0 0 18px rgba(255,255,255,0)'] }}
             transition={{ repeat: Infinity, duration: 2.2, ease: 'easeOut' }}
             style={{ borderRadius: '1rem' }}
           >
             <a
               href={`tel:${PHONE.replace(/\s/g, '')}`}
-              className="shine-effect inline-flex items-center gap-3.5 bg-noir text-gold font-bold text-xl px-10 py-5 rounded-2xl hover:bg-anthracite transition-colors duration-200 shadow-2xl"
+              className="shine-effect inline-flex items-center gap-3.5 bg-white text-rouge font-bold text-xl px-10 py-5 rounded-2xl hover:bg-gray-50 transition-colors duration-200 shadow-2xl"
               aria-label={`Appeler Serrurier Wagner au ${PHONE} — disponible 24h/24`}
             >
               <Phone size={22} className="flex-shrink-0" />
@@ -57,7 +57,7 @@ export default function CTAFinal() {
           </motion.div>
 
           {/* Micro-détails */}
-          <div className="flex flex-wrap justify-center gap-6 mt-10 text-noir/50 text-sm font-medium">
+          <div className="flex flex-wrap justify-center gap-6 mt-10 text-white/70 text-sm font-medium">
             {['⚡ 30 min max', '📋 Devis gratuit', '🔒 Artisan certifié', '💳 CB acceptée'].map(item => (
               <span key={item}>{item}</span>
             ))}

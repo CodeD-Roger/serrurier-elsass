@@ -72,15 +72,15 @@ const PHONE = "03 74 47 52 51"
 function catColor(cat: string) {
   return cat === "Urgence" ? "var(--rouge)"
        : cat === "Premium" ? "var(--brass)"
-       : cat === "24h/24" ? "#3a7a4d"
-       : "var(--ink-3)"
+       : cat === "24h/24" ? "var(--rouge)"
+       : "var(--brass)"
 }
 
 function catTone(cat: string) {
-  return cat === "Urgence" ? { a: "#3a1f1b", b: "#231312", accent: "#b94a3d", text: "#e0726a" }
-       : cat === "Premium" ? { a: "#4a3a1f", b: "#2d2412", accent: "#a37e3a", text: "#c69d52" }
-       : cat === "24h/24" ? { a: "#1f3027", b: "#121d18", accent: "#3a7a4d", text: "#7ac192" }
-       :                    { a: "#2a2d36", b: "#1a1c22", accent: "#5b5f6a", text: "#9aa0aa" }
+  return cat === "Urgence" ? { a: "#3a1b1b", b: "#200f0f", accent: "#DC2626", text: "#f87171" }
+       : cat === "Premium" ? { a: "#1a2540", b: "#0f1728", accent: "#1E40AF", text: "#60a5fa" }
+       : cat === "24h/24" ? { a: "#3a1b1b", b: "#200f0f", accent: "#DC2626", text: "#f87171" }
+       :                    { a: "#1a2540", b: "#0f1728", accent: "#1E40AF", text: "#60a5fa" }
 }
 
 function Preview({ item }: { item: Prestation }) {

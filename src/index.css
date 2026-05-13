@@ -9,9 +9,9 @@
   --paper: #f4efe6;
   --paper-2: #ece5d6;
   --paper-3: #dfd6c1;
-  --brass: #a37e3a;
-  --brass-2: #c69d52;
-  --rouge: #b94a3d;
+  --brass: #1E40AF;
+  --brass-2: #3B82F6;
+  --rouge: #DC2626;
   --serif: "Playfair Display", "Times New Roman", serif;
   --sans: "Inter", system-ui, sans-serif;
 }
@@ -35,14 +35,14 @@
   }
 
   ::selection {
-    background: rgba(212, 175, 55, 0.25);
+    background: rgba(220, 38, 38, 0.20);
     color: #F5F5F0;
   }
 }
 
 @layer utilities {
-  .text-gold-gradient {
-    background: linear-gradient(135deg, #C9A227 0%, #F0D060 45%, #C9A227 100%);
+  .text-rouge-gradient {
+    background: linear-gradient(135deg, #B91C1C 0%, #EF4444 45%, #DC2626 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -126,10 +126,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 175, 55, 0.4);
+  background: rgba(220, 38, 38, 0.4);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 175, 55, 0.7);
+  background: rgba(220, 38, 38, 0.7);
 }

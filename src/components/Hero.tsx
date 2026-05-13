@@ -24,17 +24,17 @@ export default function Hero() {
     <section
       id="accueil"
       className="noise-overlay relative min-h-screen flex flex-col items-center justify-center px-6 py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(150deg, #0A0A0A 0%, #141416 50%, #1C1C1E 100%)' }}
+      style={{ background: 'linear-gradient(150deg, #0A0A0A 0%, #0f0f14 50%, #13131a 100%)' }}
     >
-      {/* Halo doré haut-droite */}
+      {/* Halo rouge haut-droite — urgence */}
       <div
-        className="absolute top-[-8%] right-[-8%] w-[560px] h-[560px] rounded-full pointer-events-none opacity-[0.09]"
-        style={{ background: 'radial-gradient(circle, #D4AF37 0%, transparent 65%)', filter: 'blur(64px)' }}
+        className="absolute top-[-8%] right-[-8%] w-[560px] h-[560px] rounded-full pointer-events-none opacity-[0.12]"
+        style={{ background: 'radial-gradient(circle, #DC2626 0%, transparent 65%)', filter: 'blur(64px)' }}
       />
-      {/* Halo doré bas-gauche */}
+      {/* Halo bleu bas-gauche — sécurité */}
       <div
-        className="absolute bottom-[-12%] left-[-8%] w-[420px] h-[420px] rounded-full pointer-events-none opacity-[0.06]"
-        style={{ background: 'radial-gradient(circle, #D4AF37 0%, transparent 65%)', filter: 'blur(80px)' }}
+        className="absolute bottom-[-12%] left-[-8%] w-[420px] h-[420px] rounded-full pointer-events-none opacity-[0.10]"
+        style={{ background: 'radial-gradient(circle, #1E40AF 0%, transparent 65%)', filter: 'blur(80px)' }}
       />
 
       <motion.div
@@ -45,13 +45,13 @@ export default function Hero() {
       >
         {/* Badge disponibilité */}
         <motion.div variants={itemVariants} className="mb-10">
-          <div className="inline-flex items-center gap-2.5 bg-white/[0.04] border border-gold/25 rounded-full px-5 py-2.5 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2.5 bg-white/[0.04] border border-rouge/30 rounded-full px-5 py-2.5 backdrop-blur-sm">
             <span className="relative flex h-2 w-2 flex-shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-60" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rouge opacity-60" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-rouge" />
             </span>
-            <Zap size={13} className="text-gold" />
-            <span className="text-gold text-sm font-medium tracking-wide">Intervention en 30 min garantie</span>
+            <Zap size={13} className="text-rouge" />
+            <span className="text-rouge text-sm font-medium tracking-wide">Intervention en 30 min garantie</span>
           </div>
         </motion.div>
 
@@ -63,14 +63,14 @@ export default function Hero() {
         >
           Serrurier
           <br />
-          <span className="text-gold-gradient">Wagner</span>
+          <span className="text-rouge-gradient">Wagner</span>
         </motion.h1>
 
         {/* Divider */}
         <motion.div variants={itemVariants} className="flex items-center gap-4 mb-7">
-          <div className="h-px w-12 bg-gradient-to-r from-transparent to-gold/40" />
-          <ShieldCheck size={15} className="text-gold/70" />
-          <div className="h-px w-12 bg-gradient-to-l from-transparent to-gold/40" />
+          <div className="h-px w-12 bg-gradient-to-r from-transparent to-bleu/40" />
+          <ShieldCheck size={15} className="text-bleu-light/70" />
+          <div className="h-px w-12 bg-gradient-to-l from-transparent to-bleu/40" />
         </motion.div>
 
         {/* Sous-titre */}
@@ -88,7 +88,7 @@ export default function Hero() {
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
           <a
             href={`tel:${PHONE.replace(/\s/g, '')}`}
-            className="shine-effect group inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-noir font-bold text-lg px-8 py-4 rounded-2xl transition-colors duration-200 shadow-xl shadow-gold/15 w-full sm:w-auto justify-center"
+            className="shine-effect group inline-flex items-center gap-3 bg-rouge hover:bg-rouge-dark text-white font-bold text-lg px-8 py-4 rounded-2xl transition-colors duration-200 shadow-xl shadow-rouge/25 w-full sm:w-auto justify-center"
             aria-label={`Appeler Serrurier Wagner au ${PHONE}`}
           >
             <Phone size={20} className="transition-transform duration-200 group-hover:scale-110 flex-shrink-0" />
@@ -111,7 +111,7 @@ export default function Hero() {
         >
           {['Devis gratuit', 'Sans engagement', 'Artisan certifié'].map((item) => (
             <span key={item} className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-gold/50 inline-block flex-shrink-0" />
+              <span className="w-1 h-1 rounded-full bg-bleu-light/50 inline-block flex-shrink-0" />
               {item}
             </span>
           ))}
