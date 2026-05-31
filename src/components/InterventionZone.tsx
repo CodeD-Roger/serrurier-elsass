@@ -115,7 +115,7 @@ export default function InterventionZone() {
             height="100%"
             style={{ border: 0, display: 'block', height: '100%', filter: 'saturate(0.85) contrast(0.95)' }}
             loading="lazy"
-            title="Zone d'intervention Serrurier Wagner — Haut-Rhin"
+            title="Zone d'intervention Serrurier Elsass — Haut-Rhin"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </motion.div>

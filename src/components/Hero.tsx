@@ -63,7 +63,7 @@ export default function Hero() {
         >
           Serrurier
           <br />
-          <span className="text-rouge-gradient">Wagner</span>
+          <span className="text-rouge-gradient">Elsass</span>
         </motion.h1>
 
         {/* Divider */}
@@ -89,7 +89,7 @@ export default function Hero() {
           <a
             href={`tel:${PHONE.replace(/\s/g, '')}`}
             className="shine-effect group inline-flex items-center gap-3 bg-rouge hover:bg-rouge-dark text-white font-bold text-lg px-8 py-4 rounded-2xl transition-colors duration-200 shadow-xl shadow-rouge/25 w-full sm:w-auto justify-center"
-            aria-label={`Appeler Serrurier Wagner au ${PHONE}`}
+            aria-label={`Appeler Serrurier Elsass au ${PHONE}`}
           >
             <Phone size={20} className="transition-transform duration-200 group-hover:scale-110 flex-shrink-0" />
             Appeler — {PHONE}

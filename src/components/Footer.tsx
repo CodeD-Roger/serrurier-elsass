@@ -45,7 +45,7 @@ export default function Footer({ onMentions, onConfidentialite }: Props) {
                 </svg>
               </div>
               <div>
-                <p className="font-display font-bold text-white text-lg leading-tight">Serrurier Wagner</p>
+                <p className="font-display font-bold text-white text-lg leading-tight">Serrurier Elsass</p>
                 <p className="text-gray-400 text-xs">Artisan certifié — Haut-Rhin</p>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function Footer({ onMentions, onConfidentialite }: Props) {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-gray-500 text-xs">
           <div className="flex flex-wrap items-center gap-3">
-            <p>© {year} Serrurier Wagner. Tous droits réservés.</p>
+            <p>© {year} Serrurier Elsass. Tous droits réservés.</p>
             <span className="hidden sm:inline">·</span>
             <p>SIRET : {SIRET}</p>
           </div>
@@ -144,7 +144,7 @@ export default function Footer({ onMentions, onConfidentialite }: Props) {
         </div>
 
         <p className="text-gray-600 text-xs text-center mt-4 max-w-2xl mx-auto leading-relaxed">
-          Serrurier Wagner — Entreprise individuelle. Assurance décennale Allianz n° 123456789.
+          Serrurier Elsass — Entreprise individuelle. Assurance décennale Allianz n° 123456789.
           Interventions conformes aux normes NF P25-361. Prix indicatifs, devis définitif sur place.
         </p>
       </div>

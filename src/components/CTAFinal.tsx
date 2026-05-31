@@ -57,7 +57,7 @@ export default function CTAFinal() {
             <a
               href={`tel:${PHONE.replace(/\s/g, '')}`}
               className="shine-effect inline-flex items-center gap-3.5 bg-white text-rouge font-bold text-xl px-10 py-5 rounded-2xl hover:bg-gray-50 transition-colors duration-200 shadow-2xl"
-              aria-label={`Appeler Serrurier Wagner au ${PHONE} — disponible 24h/24`}
+              aria-label={`Appeler Serrurier Elsass au ${PHONE} — disponible 24h/24`}
             >
               <Phone size={22} className="flex-shrink-0" />
               Appeler le {PHONE}
