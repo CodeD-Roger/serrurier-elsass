@@ -151,10 +151,18 @@
   .zone-grid {
     grid-template-columns: 1fr !important;
   }
+  /* Empêche les items (dont l'iframe ~300px intrinsèques) de déborder à droite */
+  .zone-grid > * {
+    min-width: 0 !important;
+  }
   .zone-map {
     min-height: 240px !important;
     aspect-ratio: 16 / 9 !important;
     position: static !important;
+    width: 100% !important;
+  }
+  .zone-map iframe {
+    max-width: 100% !important;
   }
 }
 
